@@ -21,7 +21,7 @@ btnReiniciar.onclick = () => {
 }
 
 function proximaQuestao(e) {
-    if (e.target.getAttribute('data-correct') === "true") {
+    if (e.target.getAttribute('data-correct') === 'true') {
         questaoCorreta++;
     }
 
@@ -49,7 +49,7 @@ function carregarQuestao() {
         const div = document.createElement('div');
 
         div.innerHTML = `
-            <button class="resposta" data-correct="${respostas.correto}">
+            <button class="resposta" data-correct="${resposta.correto}">
                 ${resposta.opcao}
             </button>
         `;
