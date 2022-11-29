@@ -45,15 +45,14 @@ function carregarQuestao() {
     respostas.innerHTML = "";
     questao.innerHTML = item.questao;
 
-    item.resposta.forEach((respostas) => {
+    item.resposta.forEach((resposta) => {
         const div = document.createElement('div');
 
-        div.innerHTML =
-            `
+        div.innerHTML = `
             <button class="resposta" data-correct="${respostas.correto}">
-                ${respostas.opcao}
+                ${resposta.opcao}
             </button>
-        `
+        `;
 
         respostas.appendChild(div);
     });
